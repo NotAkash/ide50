@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Open+Sans+Condensed:300,700|Oswald:400,700');
+
+body
+{
+    background-image: url('https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.classdesign2
+{
+    background-image: url('https://media.istockphoto.com/photos/photo-of-a-woman-using-smart-phone-picture-id531536422?k=6&m=531536422&s=612x612&w=0&h=71rINPF3yclISmI4FwqbexPYJ2pjNLIuz6qQS6PO3PQ=');
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    background-color: #5baeb2;
+    font: Bungee;
+    text-align: right;
+    color: #7ed369;
+    font-size: 12px;
+}
+
+.classdesign1
+{
+    background-image:  url('https://si.wsj.net/public/resources/images/BN-IW016_MacBoo_P_20150610143632.jpg');
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    background-color: #5baeb2;
+    font: Oswald;
+    text-align: right;
+    margin: 15px;
+    font-size: 12px;
+}
+
+/* colors for navbar */
+.navbar-default .navbar-brand .blue
+{
+    color: #534fbe;
+    font-size: 40px;
+}
+.navbar-default .navbar-brand .red
+{
+    color: #ea433b;
+    font-size: 40px;
+}
+.navbar-default .navbar-brand .yellow
+{
+
+    font-size: 40px;
+    color: #f5b82e;
+}
+.navbar-default .navbar-brand .green
+{
+
+    font-size: 40px;
+    color: #2e944b;
+}
+.navbar-default .navbar-brand .black
+{
+
+    font-size: 40px;
+    color: #3a3737;
+}
+
+.navbar-menu
+{
+    color: blue;
+}
+.form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+    color: black;
+    text-align: center;
+    margin-left: 10%;
+    font-family: 'Oswald' 'Bold';
+
+}
+
+img .apology
+{
+  /* Set rules to fill background */
+  max-width: 60%;
+  max-height: 60%;
+  /* Set up positioning */
+  position: fixed;
+  top: 40%;
+  left: 40%;
+}
+
+td
+{
+    /* left-align tables' cells */
+    text-align: left;
+}
+
+input
+{
+    background-color: #c48989;
+    text-align: center;
+    margin-left: 70%;
+    font-family: 'Oswald' 'Bold';
+}

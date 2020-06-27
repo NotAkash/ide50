@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Remove Information
+{% endblock %}
+
+{% block main %}
+    <div class="classdesign2">
+        <h1 style="font-size: 31px; text-align: right;">Remove Certain Account Credentials  </h1>
+        <form action="{{ url_for('remove') }}" method="post">
+            <fieldset>
+                <div class="form-group">
+                    <input class="form-control" name="website" placeholder="Name Of Website" type="text"/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="email" placeholder="Inserted Email" type="text"/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="user" placeholder="Inserted Username" type="text"/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="pass" placeholder="Inserted Password" type="password"/>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-default" type="submit">Remove Credentials</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+{% endblock %}

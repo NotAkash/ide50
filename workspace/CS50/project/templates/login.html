@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<div class="classdesign1">
+    <h1 style="text-align: right;">Passbook: A CS50 Final Project</h1>
+    <h2 style="text-align: right;">Our Goal: Organize Your Passwords Securely</h2>
+    <form action="{{ url_for('login') }}" method="post" allight="right">
+
+
+        <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text"/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Password" type="password"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" type="submit">Login</button>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+{% endblock %}

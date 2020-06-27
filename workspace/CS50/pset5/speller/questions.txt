@@ -1,0 +1,41 @@
+What is pneumonoultramicroscopicsilicovolcanoconiosis?
+
+
+longest word in english language
+
+According to its man page, what does getrusage do?
+
+getrusage() returns resource usage measures
+This function reports resource usage totals for processes specified by processes, 
+
+
+Per that same man page, how many members are in a variable of type struct rusage?
+
+16
+
+Why do you think we pass before and after by reference (instead of by value) to calculate, even though we’re not changing their contents?
+
+If we pass them by value,  two structures will be copied to calculate
+  that's waste of time.
+
+
+Explain as precisely as possible, in a paragraph or more, how main goes about reading words from a file. In other words, convince us that you indeed understand how that function’s for loop works.
+
+1) Loads a textfile
+2) Starts timing data
+3) loads dictionary
+4) Calculates time to load dictionary
+5) Opens text
+6) Checks for misspelling
+7) Then waits till new word is found (non alpha character) 
+8) Check for spelling errors in total
+9) Checks for time taken
+10) Checks for all otehr variables
+
+Why do you think we used fgetc to read each word’s characters one at a time rather than use fscanf with a format string like "%s" to read whole words at a time? Put another way, what problems might arise by relying on fscanf alone?
+
+fscanf would have less customization, you can't make a program to skip non alphabetical characters.
+
+Why do you think we declared the parameters for check and load as const (which means "constant")?
+
+They're not meant to be changed in this func.

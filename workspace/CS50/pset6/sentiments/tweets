@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+
+# TODO
+
+#Import Files
+from helpers import *
+import sys
+import os
+from analyzer import Analyzer
+import nltk
+from termcolor import colored
+
+
+def main():     #Main File
+
+
+    #Ensuring Proper Usage
+    if len(sys.argv) != 2:
+        sys.exit("Usage: ./tweets [@]userName")
+
+
+    Name = sys.argv[1].strip("@")       #UserName Is The First System Argument Without "@"
+
+    # Analyzer: Load Files
+    positives = os.path.join(sys.path[0], "positive-words.txt")
+    negatives = os.path.join(sys.path[0], "negative-words.txt")
+    analyzer = Analyzer(positives, negatives)
+
+    # Analyzing tweets and show result, exit if private
+
+    Listweets = get_user_timeline(Name, 50)
+    if Listweets == None:               #If Private/Unexistant
+        sys.exit("User is private or doesn't exist")
+
+
+    for t in Listweets:             #Iterate Through Each Tweet And Analyze It, then score it
+        fscore = analyzer.analyze(t)
+
+        if fscore > 0:
+            print(colored(fscore,"green"),colored(t,"green"))
+        elif fscore < 0 :
+            print(colored(fscore,"red"),colored(t,"red"))
+        else:
+            print(colored(fscore,"yellow"),colored(t,"yellow"))
+
+
+
+if __name__ == "__main__":
+    main()
+#Run main()
+
+
